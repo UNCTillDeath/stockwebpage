@@ -1,0 +1,187 @@
+html{
+  background-color:#709dc4;
+}
+
+
+.navbar{
+  vertical-align: top;
+  align-items: flex-center;
+  margin-left:0px !important;
+  background-color: #709dc4;
+  padding-left: 4px !important;
+
+  padding-bottom: 2px !important;
+  padding-top: 0px !important;
+  margin-top: 0px !important;
+}
+
+#cams{
+  margin-top: 5px;
+  margin-right: 10px;
+  float:right;
+  width: 20%;
+}
+
+.head{
+  border-bottom-style: inset;
+background-color: #3E4551;
+
+  background-size: cover;
+
+  background-size: 100% 100%;
+  background-clip: border-box;
+  background-position: top;
+  border-color: #709dc4;
+  border-width:8px;
+  font-weight: bolder;
+  color:#709dc4;
+
+
+
+}
+
+.tab{
+  padding-top:50px;
+}
+
+#ticket{
+  float:right;
+  vertical-align: bottom;
+  width:20%;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+#search{
+  margin-top:10px;
+}
+
+label {
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  color: #999999;
+}
+
+input {
+  width: 100%;
+  padding: 0.5em 0.5em;
+  font-size: 1.2em;
+  border-radius: 3px;
+  border: 1px solid #D9D9D9;
+}
+
+#logo{
+  width: 40%;
+  height: 100%;
+  float:left;
+  padding-right: 5px;
+  padding-left:0px;
+  padding-bottom:0px;
+  margin-bottom:0px;
+
+}
+
+.nav-item{
+  padding-top: 10px !important;
+  padding-right: 10px;
+  padding-bottom:0px;
+  float:left;
+
+}
+
+#worklog{
+  padding-top: 10px;
+  margin-top:10px;
+}
+
+.navlist{
+  font-size: 20pt !important;
+  padding-bottom: 0px;
+  margin-top: 0px !important;
+}
+
+.navbar-brand{
+  float:left !important;
+  display:flex;
+  max-width: 600px;
+  padding-left: 0px;
+  margin-left:0px;
+  padding-bottom: 0px;
+}
+
+.jumbotron{
+  float:left;
+  padding-top: 5px;
+  margin-top: 5px;
+  height:1000px;
+  width: 75%;
+
+  margin-left: 5px;
+}
+
+#up{
+  float: right;
+  padding-right: 20px;
+}
+
+.dropdownMenu{
+  float:left;
+}
+
+#he{
+  margin-bottom:0px;
+  padding-bottom: 0px;
+  height:75px;
+  vertical-align: bottom;
+}
+
+#login{
+  float:left;
+  min-width: 250px;
+  padding: 14px 14px 0px 5px;
+  overflow:hidden;
+  background-color:rgba(255,255,255,.8);
+}
+
+.form-group{
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+.img-circle{
+  float:right;
+  height:80px;
+  width:80px;
+  margin-top:12px;
+  margin-right: 7px;
+}
+
+.display{
+  margin-left: 15px;
+  padding-top:7px;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
