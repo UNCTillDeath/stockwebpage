@@ -1,66 +1,207 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Java Web Starter Application</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link rel="stylesheet" href="style.css" />
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script src="main.js"></script>
-	<!-- Material Design fonts -->
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <!-- Bootstrap Material Design -->
-  <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.css">
-  <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap-material-design/dist/css/ripples.min.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Material Design Bootstrap</title>
+		<link href="css/style.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.css" rel="stylesheet">
+
+
 </head>
-<nav class="navbar default-color">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand waves-effect waves-light" href="#">Brand</a>
-                </div>
 
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#" class="waves-effect waves-light">Link <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#" class="waves-effect waves-light">Link</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">One more separated link</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="navbar-form navbar-right" role="search">
-                        <div class="form-group waves-effect waves-light">
-                            <input type="text" class="form-control" placeholder="Search">
-                        </div>
-                    </form>
-                </div>
+<body>
+
+  <div id="mySidenav" class="sidenav">
+    <br>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  </div>
+
+
+	<!--Navbar-->
+	<nav class="navbar navbar-dark stylish-color-dark">
+	    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx2">
+	        <i class="fa fa-bars"></i>
+	    </button>
+	        <div class="collapse navbar-toggleable-xs" id="collapse">
+	            <a class="navbar-brand car-blue-text navlist" onclick="openNav()" id = "he">
+								<img src = "http://www.unc.edu/wp-content/themes/unc-main/images/large_blue_unc.png" id = "logo">
+							</a>
+	            <ul class="nav navbar-nav" id = "up">
+	                <li class="nav-item">
+	                    <a class="nav-link car-blue-text navlist">Home</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link car-blue-text navlist">Features</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link car-blue-text navlist ">Pricing</a>
+	                </li>
+	                <li class="nav-item btn-group dropdownMenu navlist">
+	                    <a class="nav-link dropdown-toggle car-blue-text" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login</a>
+	                    <div class="dropdown-menu dropdown-menu-right stylish-color-dark" id = "login" aria-labelledby="dropdownMenu1">
+                        <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" >
+                           <div class="form-group" id="login-nav">
+                              <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                              <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                           </div>
+                           <div class="form-group">
+                              <label class="sr-only" for="exampleInputPassword2" id = "pass">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                          </div>
+                          <div class="form-group" id = "sign">
+                              <button type="submit" class="btn btn-primary btn-elegant" >Sign in</button>
+                          </div>
+                      </form>
+	                  </div>
+	              </li>
+                  <li class="nav-item btn-group dropdownMenu navlist">
+	                    <a class="nav-link dropdown-toggle car-blue-text" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
+	                    <div class="dropdown-menu dropdown-menu-right stylish-color-dark" aria-labelledby="dropdownMenu1">
+	                        <a class="dropdown-item car-blue-text">Supported Rooms</a>
+	                        <a class="dropdown-item car-blue-text">Find a Classroom</a>
+	                        <a class="dropdown-item car-blue-text">Schedule Classroom Demo</a>
+                          <a class="dropdown-item car-blue-text">Classroom Statistics</a>
+                          <a class="dropdown-item car-blue-text">Classroom Schedule</a>
+                          <a class="dropdown-item car-blue-text">Facilities Request</a>
+	                    </div>
+	                </li>
+	            </ul>
+	        </div>
+	</nav>
+
+  <!--Camera Card-->
+  <div class="card stylish-color-dark" id = "cams">
+    <div class="card-block">
+      <div id="page-wrapper">
+        <h1 class="car-blue-text">Cameras</h1>
+          <label for="default">Pick a Building</label>
+          <input type="text" list="Rooms" placeholder="e.g. Peabody">
+              <datalist id="rooms">
+                <option value="Peabody">
+                <option value="Phillips">
+                <option value="Hanes">
+                <option value="Hanes Art Center">
+              </datalist>
+
+
+        <label for="ajax">Pick a Room Number</label>
+        <input type="text" id="ajax" list="json-datalist" placeholder="Room Number">
+        <datalist id="json-datalist"></datalist>
+        <button type="submit" class="btn btn-primary btn-block" id ="search" >Search</button>
+      </div>
+    </div>
+  </div>
+
+  <!--Main Page-->
+  <div class="jumbotron">
+    <div class = "head">
+    <img src="blankprof.png" class = "img-circle">
+        <h1 class="display">Keith Whitley</h1>
+        <h3 class = "display">ITS-Classroom Hotline </h3>
+    </div>
+
+    <!--Ticket Table-->
+    <div class="tab">
+      <h2>Tickets</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Room Number</th>
+            <th>Issue</th>
+            <th>Worklog</th>
+            <th>Open?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Peabody 204</td>
+            <td>Audio</td>
+            <td>Audio for VGA not working</td>
+            <td> 4:45PM </td>
+          </tr>
+          <tr>
+            <td>Phillips 383</td>
+            <td>VGA</td>
+            <td>No VGA singal</td>
+            <td>Yes until 7PM</td>
+          </tr>
+          <tr>
+            <td>Hanes 120</td>
+            <td>HDMI</td>
+            <td>HDMI Audio not working</td>
+            <td>No </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!--Ticket Card-->
+  <div class="card stylish-color-dark" id = "ticket">
+      <div class="card-block">
+        <div id="page-wrapper">
+          <h1 class="car-blue-text">Tickets</h1>
+          <li class="nav-item btn-group dropdownMenu navlist">
+            <a class="nav-link dropdown-toggle car-blue-text" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Room</a>
+            <div class="dropdown-menu dropdown-menu-right stylish-color-dark" aria-labelledby="dropdownMenu1">
+              <a class="dropdown-item car-blue-text">Peabody 204 (Audio)</a>
+              <a class="dropdown-item car-blue-text">Phillips 383 (VGA)</a>
+              <a class="dropdown-item car-blue-text">Hanes 120 (HDMI)</a>
             </div>
-        </nav>
-<div class = "nonnav">
-	<h1>HEY</h1>
-</div>
+          </li>
+                  </br> </br> </br>
+        <li class="nav-item btn-group dropdownMenu navlist">
+          <a class="nav-link dropdown-toggle car-blue-text" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Status</a>
+          <div class="dropdown-menu dropdown-menu-right stylish-color-dark" aria-labelledby="dropdownMenu1">
+            <a class="dropdown-item car-blue-text">Resolved</a>
+            <a class="dropdown-item car-blue-text">Pending Analyst</a>
+          </div>
+        </li>
+                            </br></br>
+          <div class="form-group" id="worklog">
+           <label class="sr-only">Worklog</label>
+           <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Worklog" required>
+          </div>
+        <button type="submit" class="btn btn-primary btn-block" id ="search" >Search</button>
+      </div>
+    </div>
+  </div>
+
+
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type ="text/javascript" src="js/animation.js"></script>
+
+
+
 </body>
+
 </html>
